@@ -112,6 +112,10 @@ describe('prime of a number ', function () {
         expect(myApp.getPrimes(5)).toEqual([2,3,5]);
       });
 
+      it('should return [2,3,5,7,11,13] for 15', function () {
+        expect(myApp.getPrimes(15)).toEqual([2,3,5,7,11,13]);
+      });
+
       it('should return [2,3,5,7,11,13,17,19] for 20', function () {
         expect(myApp.getPrimes(20)).toEqual([2,3,5,7,11,13,17,19]);
       });
@@ -130,6 +134,10 @@ describe('prime of a number ', function () {
 
       it('should return "prime number starts from 2" for -1', function () {
         expect(myApp.getPrimes(-1)).toEqual("prime number starts from 2");
+      });
+
+      it('should return "prime number starts from 2" for -10', function () {
+        expect(myApp.getPrimes(-10)).toEqual("prime number starts from 2");
       });
 
       it('should return [2] for 2', function () {
